@@ -6,7 +6,7 @@ var func;
 var doc_id;
 
 var firebaseConfig = {
-  apiKey: "AIzaSyCEdwSS3HKDtbjyR_mz2gLdTfWG7qOZ_eQ",
+  apiKey: "[API_KEY]",
   authDomain: "anti-sexual-harassment.firebaseapp.com",
   databaseURL: "https://anti-sexual-harassment.firebaseio.com",
   projectId: "anti-sexual-harassment",
