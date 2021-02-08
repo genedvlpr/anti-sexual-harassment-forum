@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Privacy Policy</title>
+
+    <link rel="stylesheet" href="css/index.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="red" content="#5a1720">
+    <!-- Angular Material style sheet -->
+    <link rel="stylesheet" href="css/angular-material.min.css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+      <style>
+        body{ 
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-color: #e54044;
+          background-attachment:scroll; 
+          align-content: center;
+        }
+      </style>
+  
+    </head>
+      <body id="body" ng-app="NewApp" ng-cloak ng-controller="AppCtrl">
+        <!--
+          Your HTML content here
+        -->  
+        
+        <!-- Angular Material requires Angular.js Libraries -->
+        <script src="js/angular.min.js"></script>
+        <script src="js/angular-animate.min.js"></script>
+        <script src="js/angular-aria.min.js"></script>
+        <script src="js/angular-messages.min.js"></script>
+      
+        <!-- Angular Material Library -->
+        <script src="js/angular-material.min.js"></script>
+        
+        <md-content id="content" style="background-color: transparent;">
+            <md-toolbar class="md-whiteframe-2dp" id="toolbar" style="position: fixed; top:0%; background-color: #5a1720;color:#fff">
+                <div class="md-toolbar-tools" >
+                    <md-button class="md-icon-button"  ng-click="toggleLeft()"    >
+                        <md-icon>
+                          <i class="material-icons" style="color: #fff">menu</i>
+                        </md-icon>
+                    </md-button>
+              
+                    <h2 flex md-truncate>Sexual Harassment</h2>
+              
+                    <md-button href="./index.html"  hide-xs hide-sm class="" id="btn_logout_home" style="background-color: #5a1720;color:#fff" onclick=" ">Home</md-button>   
+                    <md-button href="./login.html"  hide-xs hide-sm class="" id="btn_logout_home" style="background-color: #5a1720;color:#fff" onclick=" ">Forum</md-button>
+                    <md-button href="./about.html"  hide-xs hide-sm class="" id="btn_logout_home" style="background-color: #5a1720;color:#fff" onclick=" ">About</md-button>
+                    <md-button href="./terms-conditions.html"  hide-xs hide-sm class="" id="btn_logout_home" style="background-color: #5a1720;color:#fff" onclick=" ">Terms & Condition</md-button> 
+                </div>
+            </md-toolbar>
+      
+            <div ng-controller="AppCtrl" layout="column"  ng-cloak style="background-color: #e54044">
+       
+              
+                  <md-sidenav class="md-sidenav-left" md-component-id="left"
+                              md-disable-backdrop="" md-whiteframe="4" style="">
+              
+                    <md-toolbar class="md-theme-indigo">
+                      <h1 class="md-toolbar-tools">Features</h1>
+                    </md-toolbar>
+              
+                    <md-content layout-margin="">
+                            <md-list ng-controller="ListCtrl" ng-cloak>
+                                <md-subheader class="md-no-sticky">You have access to this</md-subheader>
+                                <md-list-item class="md-2-line" ng-repeat="item in todos" ng-click="null" href="{{ item.href }}">
+                                        <img id="md-avatar" ng-src="{{item.face}}" class="md-avatar" alt="{{item.who}}" />
+    
+                                        <div class="md-list-item-text" layout="column">
+                                          <h3 id="list_title">{{ item.title }}</h3>
+                                          <h4>{{ item.description }}</h4>
+                                        </div>
+                                      </md-list-item>
+                            </md-list>
+                      <div layout-align="end end" layout="column" >
+                        <md-button class="md-fab md-mini md-primary" ng-click="toggleLeft()">
+                            <md-icon>
+                              <i class="material-icons">chevron_left</i>
+                            </md-icon>
+                        </md-button>
+                      </div>
+                      
+                    </md-content>
+              
+                  </md-sidenav>
+              
+                  <md-content layout="column" layout-align="center center" style="background-color: transparent; margin-top: 56px;margin-left:4%;margin-right:4%">
+               
+                     
+                    <div layout-align-lg="center center" layout-align-xs="center center" layout-lg="row" layout-xs="column"  style="margin-top: 100px;margin-bottom: 100px">
+
+                      <div layout="column" class="md-padding" >
+                          <h1 id="headline" class="md-display-3" style="text-align: center ;">Privacy Policy</h1>
+                          <md-card class="md-whiteframe-6dp" style="padding: 20px; font-size: 14px;margin-top: 70px"> 
+                              <h1>Welcome to our Privacy Policy</h1>
+                              <h3>Your privacy is critically important to us.</h3>
+                              Violence against woman organization is located at:<br/>
+                              <address>
+                                Violence against woman organization<br/>BLK O excess lot Brgy. San Francisco 2 Dasmariñas <br />4114 - Cavite , Philippines<br/>04234549			</address>
+                        
+                              <p>It is Violence against woman organization's policy to respect your privacy regarding any information we may collect while operating our website. This Privacy Policy applies to <a href="https://sexualharassment.web.app">https://sexualharassment.web.app</a> (hereinafter, "us", "we", or "https://sexualharassment.web.app"). We respect your privacy and are committed to protecting personally identifiable information you may provide us through the Website. We have adopted this privacy policy ("Privacy Policy") to explain what information may be collected on our Website, how we use this information, and under what circumstances we may disclose the information to third parties. This Privacy Policy applies only to information we collect through the Website and does not apply to our collection of information from other sources.</p>
+                              <p>This Privacy Policy, together with the Terms and conditions posted on our Website, set forth the general rules and policies governing your use of our Website. Depending on your activities when visiting our Website, you may be required to agree to additional terms and conditions.</p>
+                        
+                                    <h2>Website Visitors</h2>
+                              <p>Like most website operators, Violence against woman organization collects non-personally-identifying information of the sort that web browsers and servers typically make available, such as the browser type, language preference, referring site, and the date and time of each visitor request. Violence against woman organization's purpose in collecting non-personally identifying information is to better understand how Violence against woman organization's visitors use its website. From time to time, Violence against woman organization may release non-personally-identifying information in the aggregate, e.g., by publishing a report on trends in the usage of its website.</p>
+                              <p>Violence against woman organization also collects potentially personally-identifying information like Internet Protocol (IP) addresses for logged in users and for users leaving comments on https://sexualharassment.web.app blog posts. Violence against woman organization only discloses logged in user and commenter IP addresses under the same circumstances that it uses and discloses personally-identifying information as described below.</p>
+                              
+                                    <h2>Gathering of Personally-Identifying Information</h2>
+                              <p>Certain visitors to Violence against woman organization's websites choose to interact with Violence against woman organization in ways that require Violence against woman organization to gather personally-identifying information. The amount and type of information that Violence against woman organization gathers depends on the nature of the interaction. For example, we ask visitors who sign up for a blog at https://sexualharassment.web.app to provide a username and email address.</p>
+                              
+                                    <h2>Security</h2>
+                              <p>The security of your Personal Information is important to us, but remember that no method of transmission over the Internet, or method of electronic storage is 100% secure. While we strive to use commercially acceptable means to protect your Personal Information, we cannot guarantee its absolute security.</p>
+                              
+                              
+                        
+                                    <h2>Links To External Sites</h2>
+                              <p>Our Service may contain links to external sites that are not operated by us. If you click on a third party link, you will be directed to that third party's site. We strongly advise you to review the Privacy Policy and terms and conditions of every site you visit.</p>
+                              <p>We have no control over, and assume no responsibility for the content, privacy policies or practices of any third party sites, products or services.</p>
+                              
+                              
+                                    <h2>Protection of Certain Personally-Identifying Information</h2>
+                              <p>Violence against woman organization discloses potentially personally-identifying and personally-identifying information only to those of its employees, contractors and affiliated organizations that (i) need to know that information in order to process it on Violence against woman organization's behalf or to provide services available at Violence against woman organization's website, and (ii) that have agreed not to disclose it to others. Some of those employees, contractors and affiliated organizations may be located outside of your home country; by using Violence against woman organization's website, you consent to the transfer of such information to them. Violence against woman organization will not rent or sell potentially personally-identifying and personally-identifying information to anyone. Other than to its employees, contractors and affiliated organizations, as described above, Violence against woman organization discloses potentially personally-identifying and personally-identifying information only in response to a subpoena, court order or other governmental request, or when Violence against woman organization believes in good faith that disclosure is reasonably necessary to protect the property or rights of Violence against woman organization, third parties or the public at large.</p>
+                              <p>If you are a registered user of https://sexualharassment.web.app and have supplied your email address, Violence against woman organization may occasionally send you an email to tell you about new features, solicit your feedback, or just keep you up to date with what's going on with Violence against woman organization and our products. We primarily use our blog to communicate this type of information, so we expect to keep this type of email to a minimum. If you send us a request (for example via a support email or via one of our feedback mechanisms), we reserve the right to publish it in order to help us clarify or respond to your request or to help us support other users. Violence against woman organization takes all measures reasonably necessary to protect against the unauthorized access, use, alteration or destruction of potentially personally-identifying and personally-identifying information.</p>
+                              
+                                    <h2>Aggregated Statistics</h2>
+                              <p>Violence against woman organization may collect statistics about the behavior of visitors to its website. Violence against woman organization may display this information publicly or provide it to others. However, Violence against woman organization does not disclose your personally-identifying information.</p>
+                              
+                              
+                                    <h2>Cookies</h2>
+                              <p>To enrich and perfect your online experience, Violence against woman organization uses "Cookies", similar technologies and services provided by others to display personalized content, appropriate advertising and store your preferences on your computer.</p>
+                              <p>A cookie is a string of information that a website stores on a visitor's computer, and that the visitor's browser provides to the website each time the visitor returns. Violence against woman organization uses cookies to help Violence against woman organization identify and track visitors, their usage of https://sexualharassment.web.app, and their website access preferences. Violence against woman organization visitors who do not wish to have cookies placed on their computers should set their browsers to refuse cookies before using Violence against woman organization's websites, with the drawback that certain features of Violence against woman organization's websites may not function properly without the aid of cookies.</p>
+                              <p>By continuing to navigate our website without changing your cookie settings, you hereby acknowledge and agree to Violence against woman organization's use of cookies.</p>
+                              
+                              
+                              
+                                    <h2>Privacy Policy Changes</h2>
+                              <p>Although most changes are likely to be minor, Violence against woman organization may change its Privacy Policy from time to time, and in Violence against woman organization's sole discretion. Violence against woman organization encourages visitors to frequently check this page for any changes to its Privacy Policy. Your continued use of this site after any change in this Privacy Policy will constitute your acceptance of such change.</p>
+                              
+                               
+                          </md-card>
+                           
+                        </div> 
+                  </div>
+
+                   
+                  </md-content> 
+
+              </div>
+              
+              <div style=" background-color: #5a1720; margin-bottom: 0% " layout-align="center center" layout-xs="column" layoput-sm="column" layout-lg="row"> 
+
+                <div style="padding: 20px; color: #fff" layout-xs="row" layoput-sm="row" layout-lg="column">
+                  <md-button href="./login.html" style="width: 200px; text-align: left;text-indent: 20px">Forums</md-button>
+                  <md-button href="./login.html" style="width: 200px; text-align: left;text-indent: 20px">Account</md-button> 
+                </div>
+                <div style="padding: 20px; color: #fff" layout-xs="row" layoput-sm="row" layout-lg="column"> 
+                  <md-button href="./about.html" style="width: 200px; text-align: left;text-indent: 20px">About</md-button>
+                  <md-button href="./terms-conditions.html" style="width: 200px; text-align: left;text-indent: 20px">Terms & Condition</md-button>  
+                </div>
+                <div style="padding: 20px; color: #fff" layout-xs="row" layoput-sm="row" layout-lg="column"> 
+                  <md-button href="./privacy-policy.html" style="width: 200px; text-align: left;text-indent: 20px">Privacy Policy</md-button>
+                  <md-button href="./index.html" style="width: 200px; text-align: left;text-indent: 20px">Home</md-button> 
+                </div>
+                <div style="padding: 20px; color: #fff" layout-xs="row" layoput-sm="row" layout-lg="column">  
+                  <md-button href="./locations.html" style="width: 200px; text-align: left;text-indent: 20px">Office Location</md-button>
+                  <md-button href="./contact-us.html" style="width: 200px; text-align: left;text-indent: 20px">Contact Us</md-button>
+                </div>
+            </div> 
+      </md-content> 
+      <script src="https://www.gstatic.com/firebasejs/6.2.3/firebase-app.js"></script>
+
+      <script src="https://www.gstatic.com/firebasejs/6.2.3/firebase-auth.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/6.2.3/firebase-firestore.js"></script>
+
+      <script src="js/init-firebase.js"></script>
+      <script src="js/index.js"></script>       
+  </body>
+  
+
+</html>

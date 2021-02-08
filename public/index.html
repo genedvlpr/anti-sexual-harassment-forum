@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
+
+    <link rel="stylesheet" href="css/index.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="red" content="#5a1720">
+    <!-- Angular Material style sheet -->
+    <link rel="stylesheet" href="css/angular-material.min.css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+    <style>
+      body{ 
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: #e54044;
+        background-attachment:scroll; 
+        align-content: center;
+      }
+    </style>
+
+  </head>
+    <body id="body" ng-app="NewApp" ng-cloak ng-controller="AppCtrl">
+      <!--
+        Your HTML content here
+      -->  
+      
+      <!-- Angular Material requires Angular.js Libraries -->
+      <script src="js/angular.min.js"></script>
+      <script src="js/angular-animate.min.js"></script>
+      <script src="js/angular-aria.min.js"></script>
+      <script src="js/angular-messages.min.js"></script>
+    
+      <!-- Angular Material Library -->
+      <script src="js/angular-material.min.js"></script>
+      
+      <md-content id="content" style="background-color: transparent;">
+          <md-toolbar class="md-whiteframe-2dp" id="toolbar" style="position: fixed; top:0%; background-color: #5a1720;color:#fff">
+              <div class="md-toolbar-tools" >
+                  <md-button class="md-icon-button"  ng-click="toggleLeft()"    >
+                      <md-icon>
+                        <i class="material-icons" style="color: #fff">menu</i>
+                      </md-icon>
+                  </md-button>
+            
+                  <h2 flex md-truncate>Sexual Harassment</h2>
+            
+                    <md-button href="./login.html"  hide-xs hide-sm class="" id="btn_logout_home" style="background-color: #5a1720;color:#fff" onclick=" ">Forum</md-button>
+                    <md-button href="./about.html"  hide-xs hide-sm class="" id="btn_logout_home" style="background-color: #5a1720;color:#fff" onclick=" ">About</md-button>
+                    <md-button href="./terms-conditions.html"  hide-xs hide-sm class="" id="btn_logout_home" style="background-color: #5a1720;color:#fff" onclick=" ">Terms & Condition</md-button>
+                    <md-button href="./privacy-policy.html"  hide-xs hide-sm class="" id="btn_logout_home" style="background-color: #5a1720;color:#fff" onclick=" ">Privacy Policy</md-button>
+              </div>
+          </md-toolbar>
+    
+          <div ng-controller="AppCtrl" layout="column"  ng-cloak style="background-color: #e54044">
+     
+              
+                  <md-sidenav class="md-sidenav-left" md-component-id="left"
+                              md-disable-backdrop="" md-whiteframe="4" style="">
+              
+                    <md-toolbar class="md-theme-indigo">
+                      <h1 class="md-toolbar-tools">Features</h1>
+                    </md-toolbar>
+              
+                    <md-content layout-margin="">
+                            <md-list ng-controller="ListCtrl" ng-cloak>
+                                <md-subheader class="md-no-sticky">You have access to this</md-subheader>
+                                <md-list-item class="md-2-line" ng-repeat="item in todos" ng-click="null" href="{{ item.href }}">
+                                        <img id="md-avatar" ng-src="{{item.face}}" class="md-avatar" alt="{{item.who}}" />
+    
+                                        <div class="md-list-item-text" layout="column">
+                                          <h3 id="list_title">{{ item.title }}</h3>
+                                          <h4>{{ item.description }}</h4>
+                                        </div>
+                                      </md-list-item>
+                            </md-list>
+                      <div layout-align="end end" layout="column" >
+                        <md-button class="md-fab md-mini md-primary" ng-click="toggleLeft()">
+                            <md-icon>
+                              <i class="material-icons">chevron_left</i>
+                            </md-icon>
+                        </md-button>
+                      </div>
+                      
+                    </md-content>
+              
+                  </md-sidenav>
+              
+                  <md-content layout="column" layout-align="center center" style="background-color: transparent; margin-top: 56px;">
+               
+                    <div layout-align="center start" layout-lg="row" layout-sm="column" >
+                      <div  style="margin: 20px" layout="column" >
+                        <h1 id="headline" class="md-display-4" style="text-align: left ;margin-top:50px">Fight for your <br>rights</h1>
+                        <h3 id="subhead" class="md-headline" style="text-align: left;margin-top:-5% ">This is all about sexual harassment.<br> Post your experiences or know your rights <br>by using our AI Legal Assistant.</h3>
+                      </div>
+                        
+                        <img hide-xs hide-sm src="./src/img_01.jpg" style="width: 400px;height:400px">
+                    </div>
+
+                    <div hide-xs hide-sm  style="background-color: #fff; height:5px; width:300px;margin-top: 100px">
+                      
+                    </div>
+
+                    <div layout-align-lg="center start" layout-align-xs="center center" layout-lg="row" layout-xs="column"   style="margin-top:100px">
+                        <svg style="width:300px;height:300px; " viewBox="0 0 24 24">
+                            <path fill="#fff" d="M9 22C8.4 22 8 21.6 8 21V18H4C2.9 18 2 17.1 2 16V4C2 2.9 2.9 2 4 2H20C21.1 2 22 2.9 22 4V16C22 17.1 21.1 18 20 18H13.9L10.2 21.7C10 21.9 9.8 22 9.5 22H9M10 16V19.1L13.1 16H20V4H4V16H10M16.3 6L14.9 9H17V13H13V8.8L14.3 6H16.3M10.3 6L8.9 9H11V13H7V8.8L8.3 6H10.3Z" />
+                        </svg>
+
+                        <div layout="column" class="md-padding" style="margin: 20px">
+                            <h1 layout-align-sm="center center" id="headline" class="md-display-3" style="text-align: left ;">Post</h1>
+                            <h3 layout-align-sm="center center" id="subhead" class="md-subhead" style="text-align: left;margin-top:-5% ">
+                              Share your experiences here by using the 'Forum Section',<br> know every step that you can do<br>
+                              for you to fight those who harassed you in legal aspects.
+                            </h3>
+                            <md-button href="./login.html"  class="md-raised" style="width: 200px; margin-left:0px">Check Our Forum</md-button>
+                          </div>
+                    </div>
+
+                    <div layout-align-lg="center start" layout-align-xs="center center" layout-lg="row" layout-xs="column"  style="margin-top: 100px">
+
+                        
+                            
+                          <svg style="width:300px;height:300px; " viewBox="0 0 24 24">
+                            <path fill="#fff" d="M20,20H7A2,2 0 0,1 5,18V8.94L2.23,5.64C2.09,5.47 2,5.24 2,5A1,1 0 0,1 3,4H20A2,2 0 0,1 22,6V18A2,2 0 0,1 20,20M8.5,7A0.5,0.5 0 0,0 8,7.5V8.5A0.5,0.5 0 0,0 8.5,9H18.5A0.5,0.5 0 0,0 19,8.5V7.5A0.5,0.5 0 0,0 18.5,7H8.5M8.5,11A0.5,0.5 0 0,0 8,11.5V12.5A0.5,0.5 0 0,0 8.5,13H18.5A0.5,0.5 0 0,0 19,12.5V11.5A0.5,0.5 0 0,0 18.5,11H8.5M8.5,15A0.5,0.5 0 0,0 8,15.5V16.5A0.5,0.5 0 0,0 8.5,17H13.5A0.5,0.5 0 0,0 14,16.5V15.5A0.5,0.5 0 0,0 13.5,15H8.5Z" />
+                        </svg>
+                        <div layout="column" class="md-padding" style="margin: 20px" >
+                        <h1 layout-align-sm="center center" id="headline" class="md-display-3" style="text-align: left ;">Assistant</h1>
+                            <h3 layout-align-sm="center center" id="subhead" class="md-subhead" style="text-align: left;margin-top:-5% ">
+                              Ask our AI Legal Asistant that can answer your <br> different questions, on how to do some moves to protect you,<br>or know your rights.
+                            </h3>
+                            <md-button href="./login.html"  class="md-raised" style="width: 200px; margin-left:0px">Ask Our AI Assistant</md-button>
+                          </div>
+                    </div>
+
+                    <div layout-align-lg="center center" layout-align-xs="center center" layout-lg="row" layout-xs="column"  style="margin-top: 100px;padding-bottom: 100px">
+
+                      <div layout="column" class="md-padding" style="margin: 20px" layout-align-lg="center center" layout-align-xs="center center" layout-align-sm="center center">
+                          <h1 id="headline" class="md-display-3" style="text-align: center ;">About Us</h1>
+                          <h3 id="subhead" class="md-subhead" style="text-align: center;margin-top:0% ">
+                            We aspire to a world in which individuals are empowered and mobilized to share responsibility
+                            <br>in creating communities free from sexualized violence and abuse. We provide a leadership role <br>in raising awareness, supporting those who have experienced sexualized violence, holding sexual <br>perpetrators accountable, and influencing social and systemic change.</h3>
+                          <md-button class="md-raised" style="width: 200px; align-self: center">View More</md-button>
+                        </div> 
+                  </div>
+                  </md-content> 
+
+              </div>
+              
+              <div style=" background-color: #5a1720; margin-bottom: 0% " layout-align="center center" layout-xs="column" layoput-sm="column" layout-lg="row"> 
+
+                <div style="padding: 20px; color: #fff" layout-xs="row" layoput-sm="row" layout-lg="column">
+                  <md-button href="./login.html" style="width: 200px; text-align: left;text-indent: 20px">Forums</md-button>
+                  <md-button href="./login.html" style="width: 200px; text-align: left;text-indent: 20px">Account</md-button> 
+                </div>
+                <div style="padding: 20px; color: #fff" layout-xs="row" layoput-sm="row" layout-lg="column"> 
+                  <md-button href="./about.html" style="width: 200px; text-align: left;text-indent: 20px">About</md-button>
+                  <md-button href="./terms-conditions.html" style="width: 200px; text-align: left;text-indent: 20px">Terms & Condition</md-button>  
+                </div>
+                <div style="padding: 20px; color: #fff" layout-xs="row" layoput-sm="row" layout-lg="column"> 
+                  <md-button href="./privacy-policy.html" style="width: 200px; text-align: left;text-indent: 20px">Privacy Policy</md-button>
+                  <md-button href="./index.html" style="width: 200px; text-align: left;text-indent: 20px">Home</md-button> 
+                </div>
+                <div style="padding: 20px; color: #fff" layout-xs="row" layoput-sm="row" layout-lg="column">  
+                  <md-button href="./locations.html" style="width: 200px; text-align: left;text-indent: 20px">Office Location</md-button>
+                  <md-button href="./contact-us.html" style="width: 200px; text-align: left;text-indent: 20px">Contact Us</md-button>
+                </div>
+              </div> 
+      </md-content> 
+      <script src="https://www.gstatic.com/firebasejs/6.2.3/firebase-app.js"></script>
+
+      <script src="https://www.gstatic.com/firebasejs/6.2.3/firebase-auth.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/6.2.3/firebase-firestore.js"></script>
+
+      <script src="js/init-firebase.js"></script>
+      <script src="js/index.js"></script>       
+  </body>
+  
+
+</html>
