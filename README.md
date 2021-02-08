@@ -1,6 +1,8 @@
 # Anti-Sexual Harassment Forum
 Web Forum for individuals who experienced sexual harssment with chatbot.
 
+<img src="https://drive.google.com/uc?export=view&id=1V1q1rwpdLgZz1lpp-tYtf5D080aY5g90"/>
+
 # Frameworks and API integrations
 - AngularJS
 - AngularJS Material
